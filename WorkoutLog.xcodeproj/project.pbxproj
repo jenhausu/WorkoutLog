@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		654E61EB26D662C10047738D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E61EA26D662C10047738D /* LoginView.swift */; };
 		65AAEA9226514EDD001A33F9 /* WorkoutLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEA9126514EDD001A33F9 /* WorkoutLogApp.swift */; };
 		65AAEA9426514EDD001A33F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEA9326514EDD001A33F9 /* ContentView.swift */; };
 		65AAEA9626514EDE001A33F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65AAEA9526514EDE001A33F9 /* Assets.xcassets */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65050E6B26F37954009CEBF1 /* WorkoutLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkoutLog.entitlements; sourceTree = "<group>"; };
+		654E61EA26D662C10047738D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		65AAEA8E26514EDD001A33F9 /* WorkoutLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AAEA9126514EDD001A33F9 /* WorkoutLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogApp.swift; sourceTree = "<group>"; };
 		65AAEA9326514EDD001A33F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,8 +102,10 @@
 		65AAEA9026514EDD001A33F9 /* WorkoutLog */ = {
 			isa = PBXGroup;
 			children = (
+				65050E6B26F37954009CEBF1 /* WorkoutLog.entitlements */,
 				65AAEA9126514EDD001A33F9 /* WorkoutLogApp.swift */,
 				65AAEA9326514EDD001A33F9 /* ContentView.swift */,
+				654E61EA26D662C10047738D /* LoginView.swift */,
 				65AAEA9526514EDE001A33F9 /* Assets.xcassets */,
 				65AAEA9A26514EDE001A33F9 /* Persistence.swift */,
 				65AAEA9F26514EDE001A33F9 /* Info.plist */,
@@ -268,6 +273,7 @@
 				65AAEA9E26514EDE001A33F9 /* WorkoutLog.xcdatamodeld in Sources */,
 				65AAEA9B26514EDE001A33F9 /* Persistence.swift in Sources */,
 				65AAEA9426514EDD001A33F9 /* ContentView.swift in Sources */,
+				654E61EB26D662C10047738D /* LoginView.swift in Sources */,
 				65AAEA9226514EDD001A33F9 /* WorkoutLogApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WorkoutLog/WorkoutLog.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WorkoutLog/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -437,7 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = su.WorkoutLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -446,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = WorkoutLog/WorkoutLog.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WorkoutLog/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
@@ -458,7 +466,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = su.WorkoutLog;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
