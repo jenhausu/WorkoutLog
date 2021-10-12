@@ -10,19 +10,23 @@ import SwiftUI
 struct HomeView: View {
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 0) {
             ButtonView(title: "START!", subtitle: "開始運動") {
                 startWorkout()
             }
-            
+            .padding(EdgeInsets(top: 7.5, leading: 10, bottom: 7.5, trailing: 10))
+
             ButtonView(title: "MENU", subtitle: "規劃菜單") {
                 plaining()
             }
-            
+            .padding(EdgeInsets(top: 7.5, leading: 10, bottom: 7.5, trailing: 10))
+
             ButtonView(title: "EXERCISE", subtitle: "新增動作") {
                 addWorkout()
             }
+            .padding(EdgeInsets(top: 7.5, leading: 10, bottom: 7.5, trailing: 10))
         }
+        .background(Color(red: 137/255, green: 135/255, blue: 149/255))
     }
     
     func startWorkout() {
@@ -77,6 +81,5 @@ private struct ButtonView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-            .background(Color(red: 137/255, green: 135/255, blue: 149/255))
     }
 }
