@@ -10,6 +10,7 @@
 		65050E7726F3B048009CEBF1 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65050E7626F3B048009CEBF1 /* WorkoutCell.swift */; };
 		654E61EB26D662C10047738D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E61EA26D662C10047738D /* LoginView.swift */; };
 		6577023D27159792001DE0DB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6577023C27159792001DE0DB /* HomeView.swift */; };
+		657702432715A79D001DE0DB /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657702422715A79D001DE0DB /* AccountView.swift */; };
 		65AAEA9226514EDD001A33F9 /* WorkoutLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEA9126514EDD001A33F9 /* WorkoutLogApp.swift */; };
 		65AAEA9426514EDD001A33F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEA9326514EDD001A33F9 /* ContentView.swift */; };
 		65AAEA9626514EDE001A33F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65AAEA9526514EDE001A33F9 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		65050E7626F3B048009CEBF1 /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
 		654E61EA26D662C10047738D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6577023C27159792001DE0DB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		657702422715A79D001DE0DB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		65AAEA8E26514EDD001A33F9 /* WorkoutLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AAEA9126514EDD001A33F9 /* WorkoutLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogApp.swift; sourceTree = "<group>"; };
 		65AAEA9326514EDD001A33F9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,15 +108,16 @@
 		65AAEA9026514EDD001A33F9 /* WorkoutLog */ = {
 			isa = PBXGroup;
 			children = (
-				65050E6B26F37954009CEBF1 /* WorkoutLog.entitlements */,
 				65AAEA9126514EDD001A33F9 /* WorkoutLogApp.swift */,
 				65AAEA9326514EDD001A33F9 /* ContentView.swift */,
+				657702422715A79D001DE0DB /* AccountView.swift */,
 				654E61EA26D662C10047738D /* LoginView.swift */,
 				6577023C27159792001DE0DB /* HomeView.swift */,
 				65050E7626F3B048009CEBF1 /* WorkoutCell.swift */,
 				65AAEA9526514EDE001A33F9 /* Assets.xcassets */,
 				65AAEA9A26514EDE001A33F9 /* Persistence.swift */,
 				65AAEA9F26514EDE001A33F9 /* Info.plist */,
+				65050E6B26F37954009CEBF1 /* WorkoutLog.entitlements */,
 				65AAEA9C26514EDE001A33F9 /* WorkoutLog.xcdatamodeld */,
 				65AAEA9726514EDE001A33F9 /* Preview Content */,
 			);
@@ -281,6 +284,7 @@
 				65AAEA9E26514EDE001A33F9 /* WorkoutLog.xcdatamodeld in Sources */,
 				65AAEA9B26514EDE001A33F9 /* Persistence.swift in Sources */,
 				65AAEA9426514EDD001A33F9 /* ContentView.swift in Sources */,
+				657702432715A79D001DE0DB /* AccountView.swift in Sources */,
 				654E61EB26D662C10047738D /* LoginView.swift in Sources */,
 				65AAEA9226514EDD001A33F9 /* WorkoutLogApp.swift in Sources */,
 			);
