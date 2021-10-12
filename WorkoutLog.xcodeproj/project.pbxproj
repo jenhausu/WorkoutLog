@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65050E7726F3B048009CEBF1 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65050E7626F3B048009CEBF1 /* WorkoutCell.swift */; };
 		654E61EB26D662C10047738D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E61EA26D662C10047738D /* LoginView.swift */; };
 		65AAEA9226514EDD001A33F9 /* WorkoutLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEA9126514EDD001A33F9 /* WorkoutLogApp.swift */; };
 		65AAEA9426514EDD001A33F9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEA9326514EDD001A33F9 /* ContentView.swift */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		65050E6B26F37954009CEBF1 /* WorkoutLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkoutLog.entitlements; sourceTree = "<group>"; };
+		65050E7626F3B048009CEBF1 /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
 		654E61EA26D662C10047738D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		65AAEA8E26514EDD001A33F9 /* WorkoutLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AAEA9126514EDD001A33F9 /* WorkoutLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogApp.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				65AAEA9126514EDD001A33F9 /* WorkoutLogApp.swift */,
 				65AAEA9326514EDD001A33F9 /* ContentView.swift */,
 				654E61EA26D662C10047738D /* LoginView.swift */,
+				65050E7626F3B048009CEBF1 /* WorkoutCell.swift */,
 				65AAEA9526514EDE001A33F9 /* Assets.xcassets */,
 				65AAEA9A26514EDE001A33F9 /* Persistence.swift */,
 				65AAEA9F26514EDE001A33F9 /* Info.plist */,
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65050E7726F3B048009CEBF1 /* WorkoutCell.swift in Sources */,
 				65AAEA9E26514EDE001A33F9 /* WorkoutLog.xcdatamodeld in Sources */,
 				65AAEA9B26514EDE001A33F9 /* Persistence.swift in Sources */,
 				65AAEA9426514EDD001A33F9 /* ContentView.swift in Sources */,
@@ -361,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -416,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,7 +440,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WorkoutLog/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WorkoutLog/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +462,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WorkoutLog/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WorkoutLog/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
