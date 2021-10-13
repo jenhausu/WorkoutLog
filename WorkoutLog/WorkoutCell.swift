@@ -7,10 +7,27 @@
 
 import SwiftUI
 
+enum MuscleType: String {
+    case chase
+    case leg
+}
+
+struct WorkoutData: Identifiable {
+    let id = UUID()
+    
+    let muscleType: MuscleType
+    let name: String
+    let count: String
+    let weight: String
+    let date: String
+    let favorite: Bool
+}
+
 struct WorkoutCell: View {
-        
+    
+    var muscleType: MuscleType
     var name: String
-    var setCount: String
+    var sets: String
     var weight: String
     var date: String
     
@@ -18,7 +35,7 @@ struct WorkoutCell: View {
         
     var body: some View {
         HStack {
-            Image("")
+            Image(muscleType.rawValue)
                 .resizable()
                 .frame(width: 54, height: 54)
                 .cornerRadius(27)
@@ -28,7 +45,7 @@ struct WorkoutCell: View {
                     .font(.title2)
                     .padding(.bottom, 10)
                 HStack {
-                    Text("\(setCount)組｜\(weight)公斤")
+                    Text("\(sets)組｜\(weight)公斤")
                         .padding(.trailing, 20)
                     Text("\(date)天")
                         .foregroundColor(Color(red: 249/255, green: 218/255, blue: 49/255))
@@ -58,9 +75,8 @@ struct WorkoutCell: View {
 struct WorkoutCell_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            WorkoutCell(name: "Goblet walk", setCount: "12", weight: "30", date: "5")
-            WorkoutCell(name: "划船", setCount: "12", weight: "30", date: "5", favorite: false)
-            WorkoutCell(name: "划船", setCount: "12", weight: "30", date: "5", favorite: true)
+            WorkoutCell(muscleType: .chase, name: "划船", sets: "12", weight: "30", date: "5", favorite: false)
+            WorkoutCell(muscleType: .chase, name: "划船", sets: "12", weight: "30", date: "5", favorite: true)
         }
         .previewLayout(.fixed(width: 375, height: 83))
     }
