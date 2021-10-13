@@ -70,10 +70,19 @@ private struct ButtonView: View {
                 
                 Image("imageName")
             }
+            .padding(20)
         }
-        .padding()
-        .background(.white)
+        .buttonStyle(HomeButtonStyle())
         .cornerRadius(16)
+    }
+    
+}
+
+private struct HomeButtonStyle: ButtonStyle {
+        
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .background(configuration.isPressed ? Color(red: 1, green: 98 / 255, blue: 136 / 255) : .white)
     }
     
 }
