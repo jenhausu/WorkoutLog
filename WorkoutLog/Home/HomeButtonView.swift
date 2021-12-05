@@ -1,14 +1,13 @@
 //
-//  HomeView.swift
+//  HomeButtonView.swift
 //  WorkoutLog
 //
-//  Created by 蘇健豪 on 2021/10/12.
+//  Created by 蘇健豪 on 2021/12/5.
 //
 
 import SwiftUI
 
-struct HomeView: View {
-    
+struct HomeButtonView: View {
     var body: some View {
         VStack {
             HomeRow(title: "START!", subtitle: "開始運動", imageName: "home_1_icon") {
@@ -24,6 +23,7 @@ struct HomeView: View {
         .padding()
     }
     
+    
     func startWorkout() {
         
     }
@@ -38,9 +38,7 @@ struct HomeView: View {
 }
 
 
-
 private struct HomeRow: View {
-    
     let title: String
     let subtitle: String
     let imageName: String
@@ -58,9 +56,8 @@ private struct HomeRow: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text(title)
-                            .font(.system(size: 36))
+                            .font(.system(.largeTitle, design: .rounded))
                             .fontWeight(.bold)
-                            .bold()
                             .offset(y: -5)
                         HStack {
                             Text(subtitle)
@@ -80,21 +77,18 @@ private struct HomeRow: View {
         .buttonStyle(HomeButtonStyle())
         .cornerRadius(16)
     }
-    
 }
 
 private struct HomeButtonStyle: ButtonStyle {
-        
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .background(configuration.isPressed ? Color(red: 1, green: 153 / 255, blue: 178 / 255) : .white)
     }
-    
 }
 
-struct HomeView_Previews: PreviewProvider {
+struct HomeButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
+        HomeButtonView()
             .background(Color.gray)
     }
 }
