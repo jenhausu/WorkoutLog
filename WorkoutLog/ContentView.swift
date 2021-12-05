@@ -18,8 +18,7 @@ struct ContentView: View {
                 }
             WorkoutView(data: [])
                 .tabItem {
-                    Label("", image: "workout_tabicon")
-                        .tint(Color(red: 1, green: 98 / 255, blue: 136 / 255))
+                    Label(" ", systemImage: "chart.bar.fill")
                 }
             AccountView()
                 .tabItem {
