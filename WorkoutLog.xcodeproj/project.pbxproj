@@ -24,7 +24,11 @@
 		65AAEA9E26514EDE001A33F9 /* WorkoutLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEA9C26514EDE001A33F9 /* WorkoutLog.xcdatamodeld */; };
 		65AAEAA926514EDE001A33F9 /* WorkoutLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEAA826514EDE001A33F9 /* WorkoutLogTests.swift */; };
 		65AAEAB426514EDE001A33F9 /* WorkoutLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEAB326514EDE001A33F9 /* WorkoutLogUITests.swift */; };
-		65DA7795275CA21A00CCF217 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DA7794275CA21A00CCF217 /* BackgroundColor.swift */; };
+		65DA77A0275CA8EE00CCF217 /* CustomModifer.docc in Sources */ = {isa = PBXBuildFile; fileRef = 65DA779F275CA8EE00CCF217 /* CustomModifer.docc */; };
+		65DA77AE275CA8EE00CCF217 /* CustomModifer.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DA779E275CA8EE00CCF217 /* CustomModifer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65DA77B1275CA8EE00CCF217 /* CustomModifer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DA779C275CA8EE00CCF217 /* CustomModifer.framework */; };
+		65DA77B2275CA8EE00CCF217 /* CustomModifer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65DA779C275CA8EE00CCF217 /* CustomModifer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65DA77BA275CA90200CCF217 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DA7794275CA21A00CCF217 /* BackgroundColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +46,28 @@
 			remoteGlobalIDString = 65AAEA8D26514EDD001A33F9;
 			remoteInfo = WorkoutLog;
 		};
+		65DA77AF275CA8EE00CCF217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65AAEA8626514EDD001A33F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65DA779B275CA8EE00CCF217;
+			remoteInfo = CustomModifer;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		65DA77B6275CA8EE00CCF217 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65DA77B2275CA8EE00CCF217 /* CustomModifer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		65050E6B26F37954009CEBF1 /* WorkoutLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkoutLog.entitlements; sourceTree = "<group>"; };
@@ -70,6 +95,9 @@
 		65AAEAB326514EDE001A33F9 /* WorkoutLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogUITests.swift; sourceTree = "<group>"; };
 		65AAEAB526514EDE001A33F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65DA7794275CA21A00CCF217 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
+		65DA779C275CA8EE00CCF217 /* CustomModifer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomModifer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DA779E275CA8EE00CCF217 /* CustomModifer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomModifer.h; sourceTree = "<group>"; };
+		65DA779F275CA8EE00CCF217 /* CustomModifer.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CustomModifer.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DA77B1275CA8EE00CCF217 /* CustomModifer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +117,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		65AAEAAC26514EDE001A33F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DA7799275CA8EE00CCF217 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,6 +151,7 @@
 				65AAEA9026514EDD001A33F9 /* WorkoutLog */,
 				65AAEAA726514EDE001A33F9 /* WorkoutLogTests */,
 				65AAEAB226514EDE001A33F9 /* WorkoutLogUITests */,
+				65DA779D275CA8EE00CCF217 /* CustomModifer */,
 				65AAEA8F26514EDD001A33F9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +162,7 @@
 				65AAEA8E26514EDD001A33F9 /* WorkoutLog.app */,
 				65AAEAA426514EDE001A33F9 /* WorkoutLogTests.xctest */,
 				65AAEAAF26514EDE001A33F9 /* WorkoutLogUITests.xctest */,
+				65DA779C275CA8EE00CCF217 /* CustomModifer.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +177,6 @@
 				657702442715B159001DE0DB /* WorkoutView.swift */,
 				65050E7626F3B048009CEBF1 /* WorkoutCell.swift */,
 				657702422715A79D001DE0DB /* AccountView.swift */,
-				65DA7794275CA21A00CCF217 /* BackgroundColor.swift */,
 				65AAEA9526514EDE001A33F9 /* Assets.xcassets */,
 				65AAEA9A26514EDE001A33F9 /* Persistence.swift */,
 				65AAEA9F26514EDE001A33F9 /* Info.plist */,
@@ -176,7 +213,28 @@
 			path = WorkoutLogUITests;
 			sourceTree = "<group>";
 		};
+		65DA779D275CA8EE00CCF217 /* CustomModifer */ = {
+			isa = PBXGroup;
+			children = (
+				65DA779E275CA8EE00CCF217 /* CustomModifer.h */,
+				65DA7794275CA21A00CCF217 /* BackgroundColor.swift */,
+				65DA779F275CA8EE00CCF217 /* CustomModifer.docc */,
+			);
+			path = CustomModifer;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65DA7797275CA8EE00CCF217 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DA77AE275CA8EE00CCF217 /* CustomModifer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		65AAEA8D26514EDD001A33F9 /* WorkoutLog */ = {
@@ -186,10 +244,12 @@
 				65AAEA8A26514EDD001A33F9 /* Sources */,
 				65AAEA8B26514EDD001A33F9 /* Frameworks */,
 				65AAEA8C26514EDD001A33F9 /* Resources */,
+				65DA77B6275CA8EE00CCF217 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				65DA77B0275CA8EE00CCF217 /* PBXTargetDependency */,
 			);
 			name = WorkoutLog;
 			productName = WorkoutLog;
@@ -232,13 +292,31 @@
 			productReference = 65AAEAAF26514EDE001A33F9 /* WorkoutLogUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		65DA779B275CA8EE00CCF217 /* CustomModifer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DA77B3275CA8EE00CCF217 /* Build configuration list for PBXNativeTarget "CustomModifer" */;
+			buildPhases = (
+				65DA7797275CA8EE00CCF217 /* Headers */,
+				65DA7798275CA8EE00CCF217 /* Sources */,
+				65DA7799275CA8EE00CCF217 /* Frameworks */,
+				65DA779A275CA8EE00CCF217 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomModifer;
+			productName = CustomModifer;
+			productReference = 65DA779C275CA8EE00CCF217 /* CustomModifer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		65AAEA8626514EDD001A33F9 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1250;
+				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					65AAEA8D26514EDD001A33F9 = {
@@ -251,6 +329,9 @@
 					65AAEAAE26514EDE001A33F9 = {
 						CreatedOnToolsVersion = 12.5;
 						TestTargetID = 65AAEA8D26514EDD001A33F9;
+					};
+					65DA779B275CA8EE00CCF217 = {
+						CreatedOnToolsVersion = 13.1;
 					};
 				};
 			};
@@ -270,6 +351,7 @@
 				65AAEA8D26514EDD001A33F9 /* WorkoutLog */,
 				65AAEAA326514EDE001A33F9 /* WorkoutLogTests */,
 				65AAEAAE26514EDE001A33F9 /* WorkoutLogUITests */,
+				65DA779B275CA8EE00CCF217 /* CustomModifer */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +380,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65DA779A275CA8EE00CCF217 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -318,7 +407,6 @@
 				654E61EB26D662C10047738D /* LoginView.swift in Sources */,
 				652C0431275C797A00051BA5 /* HomeStatisticItemView.swift in Sources */,
 				65AAEA9226514EDD001A33F9 /* WorkoutLogApp.swift in Sources */,
-				65DA7795275CA21A00CCF217 /* BackgroundColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +426,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65DA7798275CA8EE00CCF217 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DA77A0275CA8EE00CCF217 /* CustomModifer.docc in Sources */,
+				65DA77BA275CA90200CCF217 /* BackgroundColor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -350,6 +447,11 @@
 			isa = PBXTargetDependency;
 			target = 65AAEA8D26514EDD001A33F9 /* WorkoutLog */;
 			targetProxy = 65AAEAB026514EDE001A33F9 /* PBXContainerItemProxy */;
+		};
+		65DA77B0275CA8EE00CCF217 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65DA779B275CA8EE00CCF217 /* CustomModifer */;
+			targetProxy = 65DA77AF275CA8EE00CCF217 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -473,6 +575,7 @@
 		65AAEAB926514EDE001A33F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WorkoutLog/WorkoutLog.entitlements;
@@ -496,6 +599,7 @@
 		65AAEABA26514EDE001A33F9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = WorkoutLog/WorkoutLog.entitlements;
@@ -594,6 +698,68 @@
 			};
 			name = Release;
 		};
+		65DA77B4275CA8EE00CCF217 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SUV34UZRXX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = su.CustomModifer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65DA77B5275CA8EE00CCF217 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = SUV34UZRXX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = su.CustomModifer;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -629,6 +795,15 @@
 			buildConfigurations = (
 				65AAEABF26514EDE001A33F9 /* Debug */,
 				65AAEAC026514EDE001A33F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65DA77B3275CA8EE00CCF217 /* Build configuration list for PBXNativeTarget "CustomModifer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DA77B4275CA8EE00CCF217 /* Debug */,
+				65DA77B5275CA8EE00CCF217 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
