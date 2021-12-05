@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		65050E7726F3B048009CEBF1 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65050E7626F3B048009CEBF1 /* WorkoutCell.swift */; };
 		652C042E275C77A500051BA5 /* HomeButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C042D275C77A500051BA5 /* HomeButtonView.swift */; };
+		652C0431275C797A00051BA5 /* HomeStatisticItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C0430275C797A00051BA5 /* HomeStatisticItemView.swift */; };
+		652C0433275C799200051BA5 /* HomeStatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C0432275C799200051BA5 /* HomeStatisticView.swift */; };
+		652C0435275C7FD300051BA5 /* AccumuliateExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652C0434275C7FD300051BA5 /* AccumuliateExerciseView.swift */; };
 		654E61EB26D662C10047738D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654E61EA26D662C10047738D /* LoginView.swift */; };
 		6577023D27159792001DE0DB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6577023C27159792001DE0DB /* HomeView.swift */; };
 		657702432715A79D001DE0DB /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657702422715A79D001DE0DB /* AccountView.swift */; };
@@ -44,6 +47,9 @@
 		65050E6B26F37954009CEBF1 /* WorkoutLog.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WorkoutLog.entitlements; sourceTree = "<group>"; };
 		65050E7626F3B048009CEBF1 /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
 		652C042D275C77A500051BA5 /* HomeButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeButtonView.swift; sourceTree = "<group>"; };
+		652C0430275C797A00051BA5 /* HomeStatisticItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatisticItemView.swift; sourceTree = "<group>"; };
+		652C0432275C799200051BA5 /* HomeStatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatisticView.swift; sourceTree = "<group>"; };
+		652C0434275C7FD300051BA5 /* AccumuliateExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccumuliateExerciseView.swift; sourceTree = "<group>"; };
 		654E61EA26D662C10047738D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		6577023C27159792001DE0DB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		657702422715A79D001DE0DB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
@@ -93,6 +99,9 @@
 			isa = PBXGroup;
 			children = (
 				6577023C27159792001DE0DB /* HomeView.swift */,
+				652C0432275C799200051BA5 /* HomeStatisticView.swift */,
+				652C0434275C7FD300051BA5 /* AccumuliateExerciseView.swift */,
+				652C0430275C797A00051BA5 /* HomeStatisticItemView.swift */,
 				652C042D275C77A500051BA5 /* HomeButtonView.swift */,
 			);
 			path = Home;
@@ -293,15 +302,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652C0435275C7FD300051BA5 /* AccumuliateExerciseView.swift in Sources */,
 				65050E7726F3B048009CEBF1 /* WorkoutCell.swift in Sources */,
 				6577023D27159792001DE0DB /* HomeView.swift in Sources */,
 				65AAEA9E26514EDE001A33F9 /* WorkoutLog.xcdatamodeld in Sources */,
 				65AAEA9B26514EDE001A33F9 /* Persistence.swift in Sources */,
 				657702452715B159001DE0DB /* WorkoutView.swift in Sources */,
 				65AAEA9426514EDD001A33F9 /* ContentView.swift in Sources */,
+				652C0433275C799200051BA5 /* HomeStatisticView.swift in Sources */,
 				657702432715A79D001DE0DB /* AccountView.swift in Sources */,
 				652C042E275C77A500051BA5 /* HomeButtonView.swift in Sources */,
 				654E61EB26D662C10047738D /* LoginView.swift in Sources */,
+				652C0431275C797A00051BA5 /* HomeStatisticItemView.swift in Sources */,
 				65AAEA9226514EDD001A33F9 /* WorkoutLogApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
