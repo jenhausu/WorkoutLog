@@ -24,6 +24,7 @@
 		65AAEA9E26514EDE001A33F9 /* WorkoutLog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEA9C26514EDE001A33F9 /* WorkoutLog.xcdatamodeld */; };
 		65AAEAA926514EDE001A33F9 /* WorkoutLogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEAA826514EDE001A33F9 /* WorkoutLogTests.swift */; };
 		65AAEAB426514EDE001A33F9 /* WorkoutLogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEAB326514EDE001A33F9 /* WorkoutLogUITests.swift */; };
+		65DA7795275CA21A00CCF217 /* BackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DA7794275CA21A00CCF217 /* BackgroundColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		65AAEAAF26514EDE001A33F9 /* WorkoutLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AAEAB326514EDE001A33F9 /* WorkoutLogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutLogUITests.swift; sourceTree = "<group>"; };
 		65AAEAB526514EDE001A33F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DA7794275CA21A00CCF217 /* BackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 				657702442715B159001DE0DB /* WorkoutView.swift */,
 				65050E7626F3B048009CEBF1 /* WorkoutCell.swift */,
 				657702422715A79D001DE0DB /* AccountView.swift */,
+				65DA7794275CA21A00CCF217 /* BackgroundColor.swift */,
 				65AAEA9526514EDE001A33F9 /* Assets.xcassets */,
 				65AAEA9A26514EDE001A33F9 /* Persistence.swift */,
 				65AAEA9F26514EDE001A33F9 /* Info.plist */,
@@ -315,6 +318,7 @@
 				654E61EB26D662C10047738D /* LoginView.swift in Sources */,
 				652C0431275C797A00051BA5 /* HomeStatisticItemView.swift in Sources */,
 				65AAEA9226514EDD001A33F9 /* WorkoutLogApp.swift in Sources */,
+				65DA7795275CA21A00CCF217 /* BackgroundColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +478,7 @@
 				CODE_SIGN_ENTITLEMENTS = WorkoutLog/WorkoutLog.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WorkoutLog/Preview Content\"";
+				DEVELOPMENT_TEAM = SUV34UZRXX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WorkoutLog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -496,6 +501,7 @@
 				CODE_SIGN_ENTITLEMENTS = WorkoutLog/WorkoutLog.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WorkoutLog/Preview Content\"";
+				DEVELOPMENT_TEAM = SUV34UZRXX;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = WorkoutLog/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
