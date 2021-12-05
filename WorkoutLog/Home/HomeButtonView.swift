@@ -9,18 +9,20 @@ import SwiftUI
 
 struct HomeButtonView: View {
     var body: some View {
-        VStack {
-            HomeRow(title: "START!", subtitle: "開始運動", imageName: "home_1_icon") {
-                
+        ScrollView {
+            VStack {
+                HomeRow(title: "START!", subtitle: "開始運動", imageName: "home_1_icon") {
+                    
+                }
+                HomeRow(title: "MENU", subtitle: "規劃菜單", imageName: "home_2_icon") {
+                    
+                }
+                HomeRow(title: "NEW EXERCISE", subtitle: "新增動作", imageName: "home_3_icon") {
+                    
+                }
             }
-            HomeRow(title: "MENU", subtitle: "規劃菜單", imageName: "home_2_icon") {
-                
-            }
-            HomeRow(title: "NEW EXERCISE", subtitle: "新增動作", imageName: "home_3_icon") {
-                
-            }
+            .padding()
         }
-        .padding()
     }
     
     
