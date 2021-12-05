@@ -61,6 +61,7 @@ private struct HomeRow: View {
                             .font(.system(.largeTitle, design: .rounded))
                             .fontWeight(.bold)
                             .offset(y: -5)
+                            .background(Color.white)
                         HStack {
                             Text(subtitle)
                                 .font(.system(size: 16))
