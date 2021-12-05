@@ -10,23 +10,18 @@ import SwiftUI
 struct HomeView: View {
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            ButtonView(title: "START!", subtitle: "開始運動") {
-                startWorkout()
+        VStack {
+            HomeRow(title: "START!", subtitle: "開始運動", imageName: "home_1_icon") {
+                
             }
-            .padding(EdgeInsets(top: 7.5, leading: 10, bottom: 7.5, trailing: 10))
-
-            ButtonView(title: "MENU", subtitle: "規劃菜單") {
-                plaining()
+            HomeRow(title: "MENU", subtitle: "規劃菜單", imageName: "home_2_icon") {
+                
             }
-            .padding(EdgeInsets(top: 7.5, leading: 10, bottom: 7.5, trailing: 10))
-
-            ButtonView(title: "EXERCISE", subtitle: "新增動作") {
-                addWorkout()
+            HomeRow(title: "NEW EXERCISE", subtitle: "新增動作", imageName: "home_3_icon") {
+                
             }
-            .padding(EdgeInsets(top: 7.5, leading: 10, bottom: 7.5, trailing: 10))
         }
-        .background(Color(red: 137/255, green: 135/255, blue: 149/255))
+        .padding()
     }
     
     func startWorkout() {
@@ -42,36 +37,46 @@ struct HomeView: View {
     }
 }
 
-private struct ButtonView: View {
+
+
+private struct HomeRow: View {
     
     let title: String
     let subtitle: String
+    let imageName: String
+    
     let action: () -> Void
     
     var body: some View {
         Button(action: action) {
-            HStack {
-                VStack(alignment: .leading) {
-                    Text(title)
-                        .font(.system(size: 36))
-                        .fontWeight(.bold)
-                        .bold()
-                        .offset(y: -5)
-                    HStack {
-                        Text(subtitle)
-                            .font(.system(size: 16))
-                            .fontWeight(.semibold)
-                        if subtitle == "開始運動" {
-                            Image(systemName: "play.fill")
+            ZStack {
+                HStack {
+                    Spacer()
+                    Image(imageName)
+                }
+                
+                HStack {
+                    VStack(alignment: .leading) {
+                        Text(title)
+                            .font(.system(size: 36))
+                            .fontWeight(.bold)
+                            .bold()
+                            .offset(y: -5)
+                        HStack {
+                            Text(subtitle)
+                                .font(.system(size: 16))
+                                .fontWeight(.semibold)
+                            if subtitle == "開始運動" {
+                                Image(systemName: "play.fill")
+                            }
                         }
                     }
+                    Spacer()
                 }
-                .foregroundColor(Color(red: 67 / 255, green: 64 / 255, blue: 84 / 255))
-                
-                Image("imageName")
+                .padding()
             }
-            .padding(20)
         }
+        .frame(height: 110)
         .buttonStyle(HomeButtonStyle())
         .cornerRadius(16)
     }
@@ -82,7 +87,7 @@ private struct HomeButtonStyle: ButtonStyle {
         
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .background(configuration.isPressed ? Color(red: 1, green: 98 / 255, blue: 136 / 255) : .white)
+            .background(configuration.isPressed ? Color(red: 1, green: 153 / 255, blue: 178 / 255) : .white)
     }
     
 }
@@ -90,5 +95,6 @@ private struct HomeButtonStyle: ButtonStyle {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
+            .background(Color.gray)
     }
 }
