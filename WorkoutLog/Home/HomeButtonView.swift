@@ -91,7 +91,16 @@ private struct HomeButtonStyle: ButtonStyle {
 
 struct HomeButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeButtonView()
-            .background(Color.gray)
+        Group {
+            HomeButtonView()
+            HomeButtonView()
+                .previewDevice("iPhone 13 mini")
+                .previewDisplayName("iPhone 13 mini")
+            HomeButtonView()
+                .previewDevice("iPhone 13 Pro Max")
+                .previewDisplayName("iPhone 13 Pro Max")
+        }
+        .background(Color.gray)
+
     }
 }
