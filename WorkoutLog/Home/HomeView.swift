@@ -10,16 +10,23 @@ import CustomModifer
 
 struct HomeView: View {
     var body: some View {
-        VStack {
-            HomeStatisticView()
-            HomeButtonView()
+        NavigationView {
+            VStack {
+                HomeStatisticView()
+                HomeButtonView()
+            }
+            .backgroundColor()
+            .navigationBarHidden(true)
         }
     }
 }
 
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView()
-            .backgroundColor(.gray)
+        Group {
+            HomeView()
+            HomeView()
+                .preferredColorScheme(.dark)
+        }
     }
 }
