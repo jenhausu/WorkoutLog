@@ -16,12 +16,12 @@ struct HomeStatisticView: View {
                 HomeStatisticItemView(title: "運動時數")
                 Spacer()
                 Divider()
-                    .frame(height: 48)
+                    .frame(height: 30)
                 Spacer()
                 HomeStatisticItemView(title: "運動組數")
                 Spacer()
                 Divider()
-                    .frame(height: 48)
+                    .frame(height: 30)
                 Spacer()
                 HomeStatisticItemView(title: "累計公斤數")
             }
@@ -34,6 +34,7 @@ struct HomeStatisticView: View {
 struct HomeStatisticView_Previews: PreviewProvider {
     static var previews: some View {
         HomeStatisticView()
+            .previewLayout(.sizeThatFits)
             .background(Color.gray)
     }
 }

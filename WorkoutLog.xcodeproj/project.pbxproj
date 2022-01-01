@@ -16,6 +16,7 @@
 		6577023D27159792001DE0DB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6577023C27159792001DE0DB /* HomeView.swift */; };
 		657702432715A79D001DE0DB /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657702422715A79D001DE0DB /* AccountView.swift */; };
 		657702452715B159001DE0DB /* WorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657702442715B159001DE0DB /* WorkoutView.swift */; };
+		6582F414277237A600FFE098 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6582F413277237A600FFE098 /* ColorExtension.swift */; };
 		6582F41627723B3100FFE098 /* BackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6582F41527723B3100FFE098 /* BackgroundModifier.swift */; };
 		6582F41827723E9A00FFE098 /* HomeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6582F41727723E9A00FFE098 /* HomeRowView.swift */; };
 		65AAEA9226514EDD001A33F9 /* WorkoutLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AAEA9126514EDD001A33F9 /* WorkoutLogApp.swift */; };
@@ -84,6 +85,7 @@
 		6577023C27159792001DE0DB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		657702422715A79D001DE0DB /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		657702442715B159001DE0DB /* WorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutView.swift; sourceTree = "<group>"; };
+		6582F413277237A600FFE098 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		6582F41527723B3100FFE098 /* BackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundModifier.swift; sourceTree = "<group>"; };
 		6582F41727723E9A00FFE098 /* HomeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRowView.swift; sourceTree = "<group>"; };
 		65AAEA8E26514EDD001A33F9 /* WorkoutLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 				657702442715B159001DE0DB /* WorkoutView.swift */,
 				65050E7626F3B048009CEBF1 /* WorkoutCell.swift */,
 				657702422715A79D001DE0DB /* AccountView.swift */,
+				6582F413277237A600FFE098 /* ColorExtension.swift */,
 				65AAEA9526514EDE001A33F9 /* Assets.xcassets */,
 				65AAEA9A26514EDE001A33F9 /* Persistence.swift */,
 				65AAEA9F26514EDE001A33F9 /* Info.plist */,
@@ -409,6 +412,7 @@
 				652C0435275C7FD300051BA5 /* AccumuliateExerciseView.swift in Sources */,
 				65050E7726F3B048009CEBF1 /* WorkoutCell.swift in Sources */,
 				6577023D27159792001DE0DB /* HomeView.swift in Sources */,
+				6582F414277237A600FFE098 /* ColorExtension.swift in Sources */,
 				65AAEA9E26514EDE001A33F9 /* WorkoutLog.xcdatamodeld in Sources */,
 				65AAEA9B26514EDE001A33F9 /* Persistence.swift in Sources */,
 				657702452715B159001DE0DB /* WorkoutView.swift in Sources */,

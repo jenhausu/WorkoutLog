@@ -13,10 +13,10 @@ struct HomeStatisticItemView: View {
     @State var number: Int = 0
     
     var body: some View {
-        VStack {
+        VStack(spacing: 5) {
             Text(title)
                 .font(.system(size: 13))
-                .foregroundColor(Color(red: 196/255, green: 196/255, blue: 196/255))
+                .foregroundColor(Color(red: 196, green: 196, blue: 196))
             Text("\(number)")
                 .font(.system(.title, design: .rounded))
                 .fontWeight(.bold)
@@ -33,5 +33,6 @@ struct HomeStatisticItemView_Previews: PreviewProvider {
             HomeStatisticItemView(title: "運動組數", number: 30)
             HomeStatisticItemView(title: "累計公斤數", number: 800)
         }
+        .background(Color.gray)
     }
 }

@@ -12,16 +12,16 @@ struct AccumuliateExerciseView: View {
     @State private var exerciseDays: Int = 0
     
     var body: some View {
-        VStack {
+        VStack(spacing: 33) {
             Text("本月已累計運動天數")
                 .fontWeight(.semibold)
-                .foregroundColor(Color(red: 238/255, green: 237/255, blue: 240/255))
+                .foregroundColor(Color(red: 238, green: 237, blue: 240))
             Text("\(exerciseDays)")
                 .font(.system(.largeTitle, design: .rounded))
                 .fontWeight(.bold)
                 .foregroundColor(.white)
-                .padding()
         }
+        .padding()
     }
     
 }
